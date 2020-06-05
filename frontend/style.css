@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,500&display=swap");
+
+:root {
+  --primary: #0b1033;
+  --secondary: #0f133c;
+  --button: #7854f7;
+}
+
+* {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  color: #333;
+  transition: 1s;
+}
+
+.container > div {
+  display: flex;
+  width: 50%;
+}
+
+.info-container {
+  background-color: var(--primary);
+  color: rgb(209, 209, 209);
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  height: 600px;
+  width: 600px;
+  border-radius: 120px;
+  background-color: var(--secondary);
+  transform: rotate(50deg);
+  position: absolute;
+}
+
+.square-1 {
+  margin-top: -500px;
+  margin-left: -200px;
+}
+
+.square-2 {
+  margin-top: 200px;
+  margin-left: -480px;
+}
+
+.square-3 {
+  margin-top: 70px;
+  margin-left: 300px;
+}
+
+.info-container-text {
+  position: absolute;
+  width: 400px;
+  font-weight: normal;
+}
+
+.info-container-text h1 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+.info-container-text .author-info {
+  margin-top: 40px;
+}
+
+.info-container-text .author-info h2 {
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.info-container-text .author-info p {
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.login-container form {
+  width: 700px;
+  padding: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-header {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.input-group label {
+  font-weight: bold;
+  color: #999;
+}
+
+.input-group .custom-input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  height: 40px;
+  font-size: 20px;
+  color: #666;
+}
+
+.input-group .custom-input::placeholder {
+  color: #ccc;
+}
+
+.custom-button {
+  background-color: var(--button);
+  border: none;
+  height: 60px;
+  margin-top: 50px;
+  border-radius: 30px 0 30px 30px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 7px 16px #7854f785;
+  transition: 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #4a1cf3;
+}
+
+.bem-vindo-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 70px;
+}

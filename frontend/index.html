@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="sign-up-container">
+      <div class="login-container">
+        <form>
+          <div class="login-header">Entrar</div>
+          <div class="input-group">
+            <label for="name">Login</label>
+            <input
+              type="text"
+              id="login"
+              class="custom-input"
+              placeholder="José Veiga"
+              value="admin"
+            />
+          </div>
+          <div class="input-group">
+            <label for="name">Senha</label>
+            <input
+              type="password"
+              class="custom-input"
+              placeholder="••••••••••"
+              id="password"
+              value="admin"
+            />
+          </div>
+          <button type="button" class="custom-button" id="btn-submit">
+            Entrar
+          </button>
+        </form>
+      </div>
+      <div class="info-container">
+        <div class="square square-1"></div>
+        <div class="square square-2"></div>
+        <div class="square square-3"></div>
+        <div class="info-container-text">
+          <h1>RxJs App</h1>
+          <p>
+            Este é um aplicativo simples para treinar minhas habilidades de
+            desenvolvimento web, voltada para UI e programaçõa reativa usando a
+            bilbioteca RXJS. O Angular é um dos 3 maiores frameworks de
+            JavaScript front-end na atualidade e ele é baseado nessa incrível
+            tecnologia reativa!
+          </p>
+          <div class="author-info">
+            <h2>José Veiga</h2>
+            <p>Desenvolvedor front-end</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-none" id="auth-container" style="opacity: 0;">
+      <h1 class="bem-vindo-text">Bem vindo ao sistema</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.5/rxjs.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
